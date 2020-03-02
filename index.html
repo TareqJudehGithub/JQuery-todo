@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>JQuery todo</title>
+
+     <!-- css file link -->
+     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="./assets/css/todos.css">
+     
+</head>
+<body>
+     
+     <div id="container">
+
+          <h2>Grocery List <i class="fas fa-shopping-basket"></i></h2>
+
+          <input      
+          type="text"
+          placeholder="Add items here..">
+          <button id="btn-add">Add</button>
+
+          <ul class=".ul-box-shadow">
+               <li><span><i class='far fa-trash-alt' ></i></span> Milk</li>
+               <li><span><i class='far fa-trash-alt' ></i></span> Eggs</li>
+               <li><span><i class='far fa-trash-alt' ></i></span> Tomatos</li>
+               <li><span><i class='far fa-trash-alt' ></i></span> Bread</li>
+               <li><span><i class='far fa-trash-alt' ></i></span> Cereal</li>
+              
+          </ul>
+
+          <button id="btn-clear">Clear</button>
+     </div>
+ 
+     <script src="assets/js/lib/jquery-3.4.1.min.js"></script>
+     <script src="./assets/js/todos.js"></script>
+     <script src="https://kit.fontawesome.com/9ef7b7d251.js" crossorigin="anonymous"></script>
+</body>
+</html>

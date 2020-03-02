@@ -1,0 +1,184 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+body {
+     padding: 30px;
+     font-family: 'Roboto Mono';
+   
+     background: #7F7FD5;  
+     background: -webkit-linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5);  
+     background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5); 
+}
+#container{
+     border: 2px solid rgba(138, 141, 192, 0.719);
+     border-radius: 5px;
+     width: 400px;
+     margin: 100px auto;
+     background-color: #f7f7f7;
+     box-shadow: 0px 0px 5px rgba(9, 15, 95, 0.473);
+     background-image: linear-gradient(
+          to right,
+          rgba(154, 196, 231, 0.85),
+          rgba(226, 222, 222, 0.85)),
+     url("../images/grocery.jpg");
+     background-position: center;
+     background-size: cover; 
+}
+h2 {
+     color: white;
+     text-shadow: 1px 1px black;
+     background: #2980b9;
+     padding: 5px;
+     margin: 0;
+}
+.fa-shopping-basket{
+     background: none;
+     float: right;
+}
+.fa-trash-alt{
+background:#2980b9;
+height: 20px;
+width: 0px;
+margin-right: 20px;
+text-align: center;
+color: white;
+display: inline-block;
+margin: 0 auto;
+vertical-align: 2px;
+border-radius: 5px;
+opacity: 0;
+transition: 1s ease-out;
+}
+.fa-trash-alt:active{
+     transition-duration: 0.25s;
+     background: red;
+     }
+
+input {
+     color: #2980b9;
+     margin: 1px 2px;
+     padding: 5px 0;
+     font-size: 17px;
+     background: none;
+     border-radius: 5px;
+     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.544);
+     text-shadow: 0px 0px 1px rgba(8, 23, 235, 0.719);
+     width: 81%;
+     opacity: 0.5; 
+}
+input:focus{
+
+     color: #474747;  
+     outline: none;
+     text-shadow: 0px 0px 1px rgba(8, 23, 235, 0.719);
+     opacity: 0.75;
+}
+#btn-add
+{
+     color: #474747;
+     text-shadow: 0px 0px 1px rgba(8, 23, 235, 0.719);
+     width: 15.5%;
+     padding: 8px 0;
+     font-size: 17px;
+     margin-left: -7.5px;
+     border:1px solid #7F7FD5;
+     border-radius: 10px;
+     background: none;
+     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.544);
+     outline: none;
+}
+
+#btn-add:hover {
+     color: white;
+     text-shadow: 0px 0px 1px rgba(8, 23, 235, 0.719);
+     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.544);
+     background: #2990b9; 
+     transition: 1s;
+     transform: scale(0.9);
+}
+#btn-clear {
+     width: 50%;
+     padding: 10px;
+     background: none;
+     border-radius: 10px;
+     margin: 50px 25% 5px 25%;
+     font-size: 17px;
+     border: 1px solid #7F7FD5;
+     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.544);
+     color: #474747;
+     text-shadow: 0px 0px 1px rgba(8, 23, 235, 0.719);
+     outline: none;
+} 
+#btn-clear:hover {
+     color: white;
+     text-shadow: 0px 0px 1px rgba(8, 23, 235, 0.719);
+     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.544);
+     background: #2990b9; 
+     transition: 1s;
+     transform: scale(0.9);
+}
+.btn-hover-color{
+     background: #45c0df;
+}
+.completed {
+     color: grey;
+     text-decoration: line-through;
+}
+ul{
+     list-style: none;
+     margin: 20px 20px 20px 20px;
+     padding-top: 2.5px;
+     text-shadow: 0px 0px 1px rgba(8, 23, 235, 0.719);
+     border-radius: 10px;
+}
+.ul-box-shadow {
+     box-shadow: 0px 2px 5px rgba(122, 122, 212, 0.486);
+}
+
+li{
+     height: 40px;
+     line-height: 1.5;
+     color: #474747;
+     border-bottom: 1px solid #6666662a;
+     transition-delay:  0.5s;
+     padding-top: 5px;
+     height: 45px;
+}
+li:hover {
+     background: #83a3d44b ;
+     transition: 0.5s;
+}
+li:hover i {
+     width: 20px;
+     opacity: 1;
+     transition-duration: 1s;
+}
+
+.fading-in {
+  animation: fadingIn 1s ease-out ;
+}
+@keyframes fadingIn {
+     from {
+          opacity: 0;
+          font-size: 1.5rem;
+          color: white;
+          transform: translateX(-100px);
+     }
+     to {
+          opacity: 1;
+         font-size: 1.2rem;    
+     }
+}
+.fading-out {
+     animation: fading-out 1s ease-out;
+}
+@keyframes fading-out {
+     from {
+          opacity: 1;       
+     }
+     to {
+          opacity: 0;           
+     }
+}
